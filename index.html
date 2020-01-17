@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="SGT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>頁籤與排行榜</title>
+
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-sanitize.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/tabs-ui.js"></script>
+    <script src="js/EventRank.js"></script>
+    
+    <script type="text/javascript">
+
+        $(function(){
+
+            $('.show-Web,.show-App').hide();
+
+            $('.menu').tabs({
+                tabsToShow:2,
+                tabsDefault:1,
+                tabsImgUrl:'images/',
+                tabstype:1
+            });
+
+            history.pushState({ url: location.pathname, title: document.title }, document.title, location.pathname);
+        })
+
+    </script>
+
+</head>
+<body>
+    <div id="wrapper">
+        <div id="wrapper-header">
+            <div id="container">
+    
+                <div id="logo">
+                    <a href="#" title="回首頁"></a>
+                </div>
+                <div class="logo_mark"></div>
+    
+    
+                <!-- 內容 -->
+                <main id="content">
+                    
+                    <!-- 頁籤MENU -->
+                    <nav class="menu">
+                        <a title="活動說明"><img src="images/btn01.png" alt="活動說明" /></a>
+                        <a title="視訊百萬榜"><img src="images/btn02.png" alt="視訊百萬榜" /></a>
+                    </nav>
+                    <!-- 頁籤MENU end -->
+    
+                    <!-- 頁籤一 -->
+                    <article id="Tab_Content1">
+                        <section class="item">
+                            <h2 class="item-title">
+                                <img src="images/title1.png" alt="活動時間">
+                            </h2>
+                            <div class="item-con">
+                                2019/08/15(四)維護後 ~ 2019/08/22(四)維護前。
+                            </div>
+                        </section>
+
+                        <section class="item">
+                            <h2 class="item-title">
+                                <img src="images/title2.png" alt="活動對象">
+                            </h2>
+                            <div class="item-con">
+                                老子有錢全體會員。
+                            </div>
+                        </section>
+
+                        <section class="item">
+                            <h2 class="item-title">
+                                <img src="images/title3.png" alt="活動辦法">
+                            </h2>
+                            <div class="item-con">
+                                活動期間內，玩家於視訊館「視訊百家、視訊輪盤、視訊骰寶」進行押注，計算【總贏分】並以此作為排行榜排名依據，最終給予前30名對應獎項獎勵。<br>
+                                <ol class="l-list-type1">
+                                    <li class="b-c-ffd92b">
+                                        總贏分定義：活動期間內，指定遊戲贏局「總得分-總押注額」，即為【總贏分】。
+                                        <div class="l-list-t3 c-37eaff">
+                                            <ol>
+                                                <li>A玩家於活動期間內，僅在「視訊百家」進行遊戲，其贏局總押注額為3,000分，總得分為5,000分，其排行榜總贏分為2,000分(5,000-3,000)。</li>
+                                                <li>B玩家活動期間內，在「視訊百家、視訊骰寶、視訊輪盤」，總押注額12,000分，總得分18,000分，其B玩家在排行榜的總贏分為6,000分(18,000-12,000)。</li>
+                                            </ol>
+                                        </div>
+                                    </li>
+                                </ol><br>
+
+                                <h3>★限時積分加碼★</h3>
+                                指定區間內，玩家於視訊館「視訊百家、視訊輪盤、視訊骰寶」進行押注，其總贏分依指定倍數相乘並列入榜中，衝排名奪百萬趁現在！<br>
+                                <ol class="l-list-type2">
+                                    <li class="c-ff7800 b-c-ff7800">
+                                        翻倍贏分僅列入排行榜計算，非列入當局遊戲贏分。
+                                        <img src="images/img1.png" alt="限時加倍" width="100%" />
+                                        <div class="l-list-t3 c-37eaff">
+                                            C玩家在指定區間內，僅於視訊館「視訊百家」進行押注，某局總贏分為5,000分，依指定時間進行限時積分加乘「2倍」，則當局總贏分為10,000分(5,000*2)(僅列入排行榜中計算，並無列入當局遊戲內之贏分)
+                                        </div>
+                                    </li>
+                                    <li class="c-ff7800 b-c-ff7800">
+                                        若多名玩家總贏分相同，其排名排序以先達到該值的時間作為排序，依此類推。
+                                        <div class="l-list-t3 c-37eaff">A、B玩家活動總贏分皆為92,888分，A玩家最早達到該值為08/15(四)21:30、B玩家為08/15(四)22:00，則A玩家的名次會在B玩家之前。</div>
+                                    </li>
+                                </ol>
+
+                            </div>
+                        </section>
+                        
+                        <section class="item">
+                            <h2 class="item-title">
+                                <img src="images/title4.png" alt="活動獎項">
+                            </h2>
+                            <div class="item-con">
+                                進入排行榜前30名可獲得對應獎項獎勵。<br>
+                                第1-3名兌換請見注意事項，第4-30名於2019/08/22(四)維護後，獎項老幣將於下午18點前直接入帳，可至<a href="javascript:void(0)" onclick="RedirectPage({ 'notLoginHref':'/Mvc/Home/Index/?LoginTip=1',  'notVIPHref':'/Web/Bank/Passbook.aspx',  'vipHref':'/Web/Bank/Passbook.aspx',}); return false;" class="l-underline c-00fef9">我的存摺</a>查詢。<br>
+                                <img src="images/img2.png" alt="活動獎項" width="100%" />
+                            </div>
+                        </section>
+
+                        <section class="item">
+                            <h2 class="item-title">
+                                <img src="images/title5.png" alt="注意事項">
+                            </h2>
+                            <div class="item-con">
+                                <ol class="l-list-n1">
+                                    <li>老幣領取辦法：可至會員專區→我的檔案→我的存摺查詢。</li>
+                                    <li>贈品或獎金價值（商品定價）若超過20,000元，依法須繳納10%機會中獎所得稅。 </li>
+                                    <li>玩家若獲得活動獎項，官方只提供該活動獎項；獎項不包含額外產生之費用。(如:稅金、保險等項目)。 </li>
+                                    <li>本活動第1名至第3名獎項，請於獲獎日+7日內提供完整領獎確認單，並由客服致電核資完成，如未於第七日18:00前完成，則視為放棄。獎項統一於下月底寄出，如遇不可抗力因素將會延後至最近工作日寄送。</li>
+                                    <li>中獎人如為非中華民國境內居住之個人，競技競賽機會中獎獎金或給與按給付全額一律要扣繳20% (中獎人在中華民國境內無住所，且於一課稅年度內在中華民國境內居留合計未滿183天之外僑，應依同法第73條第1項規定就源扣繳)。
+                                    </li>
+                                    <li>申請領獎之玩家未滿20歲，需附上申請人及法定代理人的新式身分證正反面影本，以進行驗證。若您尚未申辦身份證，請用戶口名簿影本取代身份證。 </li>
+                                    <li>活動中獲得獎項為機會中獎商品，消費者購買或參加活動不代表即可獲得特定商品。因個人網路環境因素導致斷線或連線失敗……等問題，本公司恕不負任何責任，活動亦照常舉行且不另做其他補償。 </li>
+                                    <li>活動中若有舞弊行為經系統查核屬實，將取消玩家活動及獲獎資格，所有判決將依據官方公告為準。</li>
+                                    <li>如遇不可抗力之事由導致獎品內容變更，主辦單位保留變更贈品權利，並改由等值商品取代之。主辦單位不負贈品之任何維護或保固責任。 </li>
+                                    <li>活動期間若發生不可抗力之因素，本公司將保留變更或終止本活動時間、內容之權利，其他活動內容或變更事項，以官網公告訊息為主，若有任何問題請洽詢客服。</li>
+                                </ol>
+                            </div>
+                        </section>
+
+                    </article>
+                    <!-- 頁籤一 end -->
+                
+                    <!-- 頁籤二 -->
+                    <article id="Tab_Content2" ng-controller="VipRankInfo">
+
+                        <section>
+                            <div class="ranktext">排行榜每小時更新一次。</div>
+                            <div class="rankform">
+                                <table class="rank-box" ng-init="VipRankModule()">
+                                    <tr class="rank-title">
+                                        <th>名次</th>
+                                        <th>暱稱</th>
+                                        <th>總贏分</th>
+                                        <th>最後統計時間</th>
+                                    </tr>
+                                    <tbody>
+                                        <tr ng-repeat="n in RankInfo" ng-class="{redblod:n.RowNo <= 30}">
+                                            <td>
+                                                <!--<div ng-show="n.RowNo <= 3" ng-class="'icon' + n.RowNo">&nbsp;</div>-->
+                                                <div ng-bind="n.RowNo <=3 ? '' : n.RowNo" ng-class="{'{{'icon' + n.RowNo}}': n.RowNo <= 3}"></div>
+                                            </td>
+                                            <td ng-bind="n.NickName"></td>
+                                            <td ng-bind="n.RankData"></td>
+                                            <td ng-bind="n.Date"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        
+                    </article>
+                    <!-- 頁籤二 end -->
+    
+                </main>
+                <!-- 內容 end -->
+    
+                
+    
+            </div>
+            <!-- container end -->
+        </div>
+    </div>
+    <!-- wrapper end -->
+    
+    
+    <div id="footer"></div>
+</body>
+</html>

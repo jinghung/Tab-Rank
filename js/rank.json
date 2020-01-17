@@ -1,0 +1,503 @@
+[
+    {
+        "RowNo": 1,
+        "NickName": "威廉希望",
+        "RankData": 45,
+        "Date": "1/10 23:45"
+    }, {
+        "RowNo": 2,
+        "NickName": "大富豪05",
+        "RankData": 25,
+        "Date": "1/11 04:59"
+    }, {
+        "RowNo": 3,
+        "NickName": "中大獎16888",
+        "RankData": 19,
+        "Date": "1/8 17:22"
+    }, {
+        "RowNo": 4,
+        "NickName": "天殺的敗類",
+        "RankData": 17,
+        "Date": "1/10 20:18"
+    }, {
+        "RowNo": 5,
+        "NickName": "財財媚媚2",
+        "RankData": 17,
+        "Date": "1/11 02:13"
+    }, {
+        "RowNo": 6,
+        "NickName": "520678",
+        "RankData": 17,
+        "Date": "1/11 07:07"
+    }, {
+        "RowNo": 7,
+        "NickName": "老子之星74262",
+        "RankData": 15,
+        "Date": "1/6 21:58"
+    }, {
+        "RowNo": 8,
+        "NickName": "魔術元",
+        "RankData": 15,
+        "Date": "1/11 05:12"
+    }, {
+        "RowNo": 9,
+        "NickName": "超人氣金萬兩",
+        "RankData": 14,
+        "Date": "1/7 01:54"
+    }, {
+        "RowNo": 10,
+        "NickName": "Vince5858",
+        "RankData": 14,
+        "Date": "1/8 11:48"
+    }, {
+        "RowNo": 11,
+        "NickName": "踢啊",
+        "RankData": 13,
+        "Date": "1/6 06:21"
+    }, {
+        "RowNo": 12,
+        "NickName": "第四密寶",
+        "RankData": 13,
+        "Date": "1/7 22:01"
+    }, {
+        "RowNo": 13,
+        "NickName": "走路都有風",
+        "RankData": 13,
+        "Date": "1/10 20:12"
+    }, {
+        "RowNo": 14,
+        "NickName": "囧囧囧",
+        "RankData": 13,
+        "Date": "1/11 04:01"
+    }, {
+        "RowNo": 15,
+        "NickName": "堅持叛逆",
+        "RankData": 12,
+        "Date": "1/9 18:03"
+    }, {
+        "RowNo": 16,
+        "NickName": "老孑真會贏",
+        "RankData": 12,
+        "Date": "1/10 20:25"
+    }, {
+        "RowNo": 17,
+        "NickName": "萬事順心如意",
+        "RankData": 12,
+        "Date": "1/11 04:44"
+    }, {
+        "RowNo": 18,
+        "NickName": "瘋達",
+        "RankData": 11,
+        "Date": "1/10 20:48"
+    }, {
+        "RowNo": 19,
+        "NickName": "我是好額人",
+        "RankData": 10,
+        "Date": "1/9 16:26"
+    }, {
+        "RowNo": 20,
+        "NickName": "金正紅",
+        "RankData": 10,
+        "Date": "1/10 02:08"
+    }, {
+        "RowNo": 21,
+        "NickName": "藍白拖",
+        "RankData": 10,
+        "Date": "1/11 01:28"
+    }, {
+        "RowNo": 22,
+        "NickName": "皇上駕崩了",
+        "RankData": 9,
+        "Date": "1/8 02:05"
+    }, {
+        "RowNo": 23,
+        "NickName": "趙大獎",
+        "RankData": 9,
+        "Date": "1/9 19:49"
+    }, {
+        "RowNo": 24,
+        "NickName": "旺旺發財",
+        "RankData": 9,
+        "Date": "1/9 23:21"
+    }, {
+        "RowNo": 25,
+        "NickName": "賭腎來也",
+        "RankData": 8,
+        "Date": "1/9 04:23"
+    }, {
+        "RowNo": 26,
+        "NickName": "阿貓",
+        "RankData": 8,
+        "Date": "1/9 20:55"
+    }, {
+        "RowNo": 27,
+        "NickName": "讓我發",
+        "RankData": 8,
+        "Date": "1/10 11:26"
+    }, {
+        "RowNo": 28,
+        "NickName": "贏到滿意",
+        "RankData": 8,
+        "Date": "1/11 00:49"
+    }, {
+        "RowNo": 29,
+        "NickName": "芸芸芸",
+        "RankData": 8,
+        "Date": "1/11 01:06"
+    }, {
+        "RowNo": 30,
+        "NickName": "牛奶湘",
+        "RankData": 8,
+        "Date": "1/11 07:20"
+    }, {
+        "RowNo": 31,
+        "NickName": "秋官",
+        "RankData": 7,
+        "Date": "1/7 22:34"
+    }, {
+        "RowNo": 32,
+        "NickName": "柏翰",
+        "RankData": 7,
+        "Date": "1/7 23:23"
+    }, {
+        "RowNo": 33,
+        "NickName": "森樂",
+        "RankData": 7,
+        "Date": "1/8 16:07"
+    }, {
+        "RowNo": 34,
+        "NickName": "定謙",
+        "RankData": 7,
+        "Date": "1/9 02:06"
+    }, {
+        "RowNo": 35,
+        "NickName": "品捷車業",
+        "RankData": 7,
+        "Date": "1/9 19:26"
+    }, {
+        "RowNo": 36,
+        "NickName": "波動",
+        "RankData": 7,
+        "Date": "1/9 23:44"
+    }, {
+        "RowNo": 37,
+        "NickName": "Baz",
+        "RankData": 7,
+        "Date": "1/10 02:14"
+    }, {
+        "RowNo": 38,
+        "NickName": "龍亨嘟嘟姊",
+        "RankData": 7,
+        "Date": "1/10 12:50"
+    }, {
+        "RowNo": 39,
+        "NickName": "萬里尋夢",
+        "RankData": 6,
+        "Date": "1/6 02:58"
+    }, {
+        "RowNo": 40,
+        "NickName": "三民志明",
+        "RankData": 6,
+        "Date": "1/8 08:50"
+    }, {
+        "RowNo": 41,
+        "NickName": "纏纏豆干",
+        "RankData": 6,
+        "Date": "1/8 11:56"
+    }, {
+        "RowNo": 42,
+        "NickName": "荒野一隻毛",
+        "RankData": 6,
+        "Date": "1/8 19:57"
+    }, {
+        "RowNo": 43,
+        "NickName": "老子就叫騰",
+        "RankData": 6,
+        "Date": "1/10 13:12"
+    }, {
+        "RowNo": 44,
+        "NickName": "冷酷狂傲帥",
+        "RankData": 6,
+        "Date": "1/10 17:21"
+    }, {
+        "RowNo": 45,
+        "NickName": "兩津文",
+        "RankData": 6,
+        "Date": "1/10 21:37"
+    }, {
+        "RowNo": 46,
+        "NickName": "彩虹賓果",
+        "RankData": 5,
+        "Date": "1/6 17:14"
+    }, {
+        "RowNo": 47,
+        "NickName": "弘弘弘",
+        "RankData": 5,
+        "Date": "1/7 10:45"
+    }, {
+        "RowNo": 48,
+        "NickName": "老子之星215184",
+        "RankData": 5,
+        "Date": "1/7 17:17"
+    }, {
+        "RowNo": 49,
+        "NickName": "麥香沙士",
+        "RankData": 5,
+        "Date": "1/8 07:36"
+    }, {
+        "RowNo": 50,
+        "NickName": "玖壹壹春風",
+        "RankData": 5,
+        "Date": "1/9 14:04"
+    }, {
+        "RowNo": 51,
+        "NickName": "有夠瞎",
+        "RankData": 5,
+        "Date": "1/10 01:00"
+    }, {
+        "RowNo": 52,
+        "NickName": "只有被咬",
+        "RankData": 4,
+        "Date": "1/5 05:12"
+    }, {
+        "RowNo": 53,
+        "NickName": "無老大",
+        "RankData": 4,
+        "Date": "1/6 00:02"
+    }, {
+        "RowNo": 54,
+        "NickName": "8888877",
+        "RankData": 4,
+        "Date": "1/7 15:57"
+    }, {
+        "RowNo": 55,
+        "NickName": "我愛高惠文",
+        "RankData": 4,
+        "Date": "1/7 21:06"
+    }, {
+        "RowNo": 56,
+        "NickName": "毛員外",
+        "RankData": 4,
+        "Date": "1/8 12:16"
+    }, {
+        "RowNo": 57,
+        "NickName": "啊憲",
+        "RankData": 4,
+        "Date": "1/8 19:23"
+    }, {
+        "RowNo": 58,
+        "NickName": "航海家",
+        "RankData": 4,
+        "Date": "1/9 07:19"
+    }, {
+        "RowNo": 59,
+        "NickName": "大都會阿誠",
+        "RankData": 4,
+        "Date": "1/9 13:19"
+    }, {
+        "RowNo": 60,
+        "NickName": "你有事儘管找我",
+        "RankData": 4,
+        "Date": "1/10 03:44"
+    }, {
+        "RowNo": 61,
+        "NickName": "一直上升",
+        "RankData": 4,
+        "Date": "1/10 04:22"
+    }, {
+        "RowNo": 62,
+        "NickName": "小兔兔喔",
+        "RankData": 4,
+        "Date": "1/10 19:16"
+    }, {
+        "RowNo": 63,
+        "NickName": "烏溜溜",
+        "RankData": 4,
+        "Date": "1/11 00:08"
+    }, {
+        "RowNo": 64,
+        "NickName": "來亂的阿福",
+        "RankData": 3,
+        "Date": "1/5 18:03"
+    }, {
+        "RowNo": 65,
+        "NickName": "睹爛王",
+        "RankData": 3,
+        "Date": "1/5 21:22"
+    }, {
+        "RowNo": 66,
+        "NickName": "彩金快來",
+        "RankData": 3,
+        "Date": "1/6 05:28"
+    }, {
+        "RowNo": 67,
+        "NickName": "鹿業",
+        "RankData": 3,
+        "Date": "1/6 05:50"
+    }, {
+        "RowNo": 68,
+        "NickName": "直升機",
+        "RankData": 3,
+        "Date": "1/6 21:46"
+    }, {
+        "RowNo": 69,
+        "NickName": "530678",
+        "RankData": 3,
+        "Date": "1/7 21:58"
+    }, {
+        "RowNo": 70,
+        "NickName": "實耐格",
+        "RankData": 3,
+        "Date": "1/8 06:18"
+    }, {
+        "RowNo": 71,
+        "NickName": "狠狠一下",
+        "RankData": 3,
+        "Date": "1/8 15:04"
+    }, {
+        "RowNo": 72,
+        "NickName": "秀山阿肥",
+        "RankData": 3,
+        "Date": "1/8 20:20"
+    }, {
+        "RowNo": 73,
+        "NickName": "沒這回事",
+        "RankData": 3,
+        "Date": "1/9 00:57"
+    }, {
+        "RowNo": 74,
+        "NickName": "煞羅",
+        "RankData": 3,
+        "Date": "1/9 07:41"
+    }, {
+        "RowNo": 75,
+        "NickName": "幸山大太保",
+        "RankData": 3,
+        "Date": "1/9 15:41"
+    }, {
+        "RowNo": 76,
+        "NickName": "我豪帥",
+        "RankData": 3,
+        "Date": "1/10 04:35"
+    }, {
+        "RowNo": 77,
+        "NickName": "奇蹟特仕版",
+        "RankData": 3,
+        "Date": "1/10 18:37"
+    }, {
+        "RowNo": 78,
+        "NickName": "諾麗果",
+        "RankData": 3,
+        "Date": "1/10 19:26"
+    }, {
+        "RowNo": 79,
+        "NickName": "非贏不可888",
+        "RankData": 3,
+        "Date": "1/10 22:35"
+    }, {
+        "RowNo": 80,
+        "NickName": "中和忠舍",
+        "RankData": 3,
+        "Date": "1/11 00:37"
+    }, {
+        "RowNo": 81,
+        "NickName": "死了都要開",
+        "RankData": 2,
+        "Date": "1/4 15:47"
+    }, {
+        "RowNo": 82,
+        "NickName": "我是豪哥",
+        "RankData": 2,
+        "Date": "1/4 21:09"
+    }, {
+        "RowNo": 83,
+        "NickName": "老子之星739262",
+        "RankData": 2,
+        "Date": "1/4 22:46"
+    }, {
+        "RowNo": 84,
+        "NickName": "喝咖",
+        "RankData": 2,
+        "Date": "1/5 08:05"
+    }, {
+        "RowNo": 85,
+        "NickName": "來贏錢喔",
+        "RankData": 2,
+        "Date": "1/5 11:05"
+    }, {
+        "RowNo": 86,
+        "NickName": "south888",
+        "RankData": 2,
+        "Date": "1/5 23:54"
+    }, {
+        "RowNo": 87,
+        "NickName": "打通關",
+        "RankData": 2,
+        "Date": "1/6 05:07"
+    }, {
+        "RowNo": 88,
+        "NickName": "天轄",
+        "RankData": 2,
+        "Date": "1/6 11:03"
+    }, {
+        "RowNo": 89,
+        "NickName": "大頭二寶",
+        "RankData": 2,
+        "Date": "1/7 05:43"
+    }, {
+        "RowNo": 90,
+        "NickName": "膩賞賴打借幾雷",
+        "RankData": 2,
+        "Date": "1/7 09:33"
+    }, {
+        "RowNo": 91,
+        "NickName": "十三鄒",
+        "RankData": 2,
+        "Date": "1/7 13:28"
+    }, {
+        "RowNo": 92,
+        "NickName": "躺著賺比較快",
+        "RankData": 2,
+        "Date": "1/7 13:39"
+    }, {
+        "RowNo": 93,
+        "NickName": "格老子不要咬",
+        "RankData": 2,
+        "Date": "1/7 14:03"
+    }, {
+        "RowNo": 94,
+        "NickName": "非茶不可",
+        "RankData": 2,
+        "Date": "1/7 17:10"
+    }, {
+        "RowNo": 95,
+        "NickName": "卜卜迎",
+        "RankData": 2,
+        "Date": "1/7 17:54"
+    }, {
+        "RowNo": 96,
+        "NickName": "星空月亮",
+        "RankData": 2,
+        "Date": "1/7 18:06"
+    }, {
+        "RowNo": 97,
+        "NickName": "動感小美女888",
+        "RankData": 2,
+        "Date": "1/7 22:51"
+    }, {
+        "RowNo": 98,
+        "NickName": "平價",
+        "RankData": 2,
+        "Date": "1/7 22:53"
+    }, {
+        "RowNo": 99,
+        "NickName": "有錢就夠",
+        "RankData": 2,
+        "Date": "1/7 22:53"
+    }, {
+        "RowNo": 100,
+        "NickName": "大頭三寶",
+        "RankData": 2,
+        "Date": "1/8 00:22"
+    }
+]

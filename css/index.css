@@ -1,0 +1,547 @@
+@charset "UTF-8";
+/*@import url('../../../../../Common/Css/normalize.css');
+@import "../../../../../Common/Css/SCSS/mixin";
+@import "../../../../../Common/Css/SCSS/all";*/
+@import url("https://static.08online.com/Common/Css/normalize.css");
+/*@mixin box-width($boxwidth) {
+    width:(100/$boxwidth)+%;
+}*/
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ol, ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:focus {
+  outline: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.c-ffe100 {
+  color: #ffe100;
+}
+
+.c-37eaff {
+  color: #37eaff;
+}
+
+.c-ff7800 {
+  color: #ff7800;
+}
+
+.c-ff7800:before {
+  color: #ff7800;
+}
+
+.c-00fef9 {
+  color: #00fef9;
+}
+
+.c-ffffff {
+  color: #ffffff;
+}
+
+.c-9400ff {
+  color: #9400ff;
+}
+
+.c-f15b00 {
+  color: #f15b00;
+}
+
+.l-nolink {
+  cursor: default;
+}
+
+.l-underline {
+  text-decoration: underline;
+}
+
+.l-hover:hover {
+  opacity: .8;
+  -webkit-transition: opacity .2s linear;
+  transition: opacity .2s linear;
+}
+
+.l-list-n1 {
+  padding: 0 0 0 1.8rem;
+}
+
+.l-list-n1 > li {
+  list-style: decimal;
+}
+
+.l-list-n2 {
+  padding: 0 0 0 1.8rem;
+}
+
+.l-list-n2 > li {
+  list-style: decimal-leading-zero;
+}
+
+.l-list-n3 {
+  position: relative;
+}
+
+.l-list-n3 > li {
+  padding: 0 0 0 2rem;
+  counter-increment: cnt;
+  list-style: none;
+}
+
+.l-list-n3 > li:before {
+  display: marker;
+  content: "(" counter(cnt) ") ";
+  text-align: right;
+  position: absolute;
+  margin: 0 0 0 -2.2em;
+  width: 2em;
+}
+
+.l-list-type1 {
+  padding: 0;
+  position: relative;
+}
+
+.l-list-type1 > li {
+  padding: 0 0 0 1em;
+}
+
+.l-list-type1 > li:before {
+  content: '★ ';
+  position: absolute;
+  margin: 0 0 0 -1em;
+}
+
+.l-list-type2 {
+  padding: 0;
+}
+
+.l-list-type2 > li {
+  list-style: none;
+  padding: 0 0 0 1em;
+}
+
+.l-list-type2 > li:before {
+  content: '◆ ';
+  position: absolute;
+  margin: 0 0 0 -1em;
+}
+
+.l-list-t3 {
+  padding: 0 0 0 3em;
+}
+
+.l-list-t3:before {
+  content: '舉例：';
+  position: absolute;
+  margin: 0 0 0 -3em;
+}
+
+/*====================主要架構====================*/
+html {
+  font-size: 24px;
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Microsoft YaHei UI", "Microsoft YaHei", Roboto, "Hiragino Sans GB", "Source Han Sans CN", Fira Sans, "Droid Sans", "Helvetica Neue", arial, sans-serif;
+  color: #ffffff;
+}
+
+@media all and (max-width: 525px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 460px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 360px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  background: #64007a;
+  overflow-x: hidden;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+  background: transparent url("../images/wrap_bg2.jpg") center top repeat-y;
+  background-size: 1921px;
+}
+
+@media all and (max-width: 1000px) {
+  #wrapper {
+    background-size: 194%;
+  }
+}
+
+@media all and (max-width: 720px) {
+  #wrapper {
+    background: transparent url("../images/app_wrap_bg2.jpg") center top repeat-y;
+    background-size: 100%;
+  }
+}
+
+#wrapper #wrapper-header {
+  height: 100%;
+  background: transparent url("../images/wrap_bg.jpg") center top no-repeat;
+  background-size: 1921px;
+}
+
+@media all and (max-width: 1000px) {
+  #wrapper #wrapper-header {
+    background-size: 194%;
+  }
+}
+
+@media all and (max-width: 720px) {
+  #wrapper #wrapper-header {
+    background: transparent url("../images/app_wrap_bg.jpg") center top no-repeat;
+    background-size: 100%;
+  }
+}
+
+#container {
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media all and (max-width: 1000px) {
+  #container {
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+#content {
+  height: auto;
+  padding: 96% 2.5% 2% 2.5%;
+}
+
+@media all and (max-width: 1000px) {
+  #content {
+    padding: 97% 3% 2%;
+  }
+}
+
+@media all and (max-width: 720px) {
+  #content {
+    padding: 126% 0 2%;
+  }
+}
+
+#footer {
+  width: 100%;
+  height: 75px;
+  background: #000 url("../images/global/foot.jpg") center top no-repeat;
+  background-size: auto;
+  position: absolute;
+}
+
+@media all and (max-width: 720px) {
+  #footer {
+    background: #000 url("../images/global/foot2.jpg") center top no-repeat;
+    background-size: auto;
+  }
+}
+
+@media all and (max-width: 525px) {
+  #footer {
+    background-size: 100%;
+  }
+}
+
+@media all and (max-width: 460px) {
+  #footer {
+    height: 55px;
+  }
+}
+
+@media all and (max-width: 360px) {
+  #footer {
+    height: 45px;
+  }
+}
+
+/*====================LOGO、FB、浮動ICON====================*/
+#logo {
+  margin: 10px 0 0 5px;
+  z-index: 90;
+  width: 110px;
+  height: 85px;
+  background: transparent url("../images/global/logo.png") center top no-repeat;
+  background-size: 100%;
+  float: left;
+}
+
+@media all and (max-width: 500px) {
+  #logo {
+    width: 80px;
+    height: 60px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  #logo {
+    width: 60px;
+    height: 47px;
+  }
+}
+
+#logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.mark {
+  margin: 20px 0 0 0;
+  width: 38px;
+  height: 40px;
+  background: transparent url("../images/global/logo_mark.png") center top no-repeat;
+  background-size: 100%;
+  float: left;
+}
+
+@media all and (max-width: 500px) {
+  .mark {
+    width: 35px;
+    height: 40px;
+    margin: 15px 0 0 0;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .mark {
+    width: 30px;
+    height: 32px;
+    margin: 10px 0 0 0;
+  }
+}
+
+#fb {
+  margin: 0 5px 0 0;
+  width: 222px;
+  height: 56px;
+  display: block;
+  background: transparent url("../images/global/fb_btn.png") center top no-repeat;
+  background-size: 100%;
+  float: right;
+}
+
+@media all and (max-width: 720px) {
+  #fb {
+    width: 180px;
+    height: 40px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  #fb {
+    width: 160px;
+    height: 36px;
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 400px) {
+  #fb {
+    width: 135px;
+    height: 32px;
+  }
+}
+
+/*==================== MENU ====================*/
+.menu {
+  padding: 0 2% 3%;
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+}
+
+.menu a {
+  width: 50%;
+  display: block;
+  float: left;
+}
+
+.menu a img {
+  width: 100%;
+  display: block;
+}
+
+/*==================== 框架 ====================*/
+#Tab_Content1, #Tab_Content2 {
+  margin: 2% 0.3% 5%;
+}
+
+/*====================內容====================*/
+.item {
+  width: 100%;
+  height: auto;
+  padding: 1% 0 2%;
+  position: relative;
+}
+
+.item .item-title {
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+@media all and (max-width: 720px) {
+  .item .item-title img {
+    width: 45%;
+  }
+}
+
+.item .item-con {
+  padding: 1%;
+}
+
+@media all and (max-width: 1000px) {
+  .item .item-con {
+    padding: 1% 2%;
+  }
+}
+
+.item .item-con h3 {
+  padding: 0 0 2% 0;
+  color: #fffc00;
+  font-size: 1.8em;
+}
+
+/*==================== 排行榜 ====================*/
+.ranktext {
+  width: 100%;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+.rankform {
+  padding: 2% 1%;
+}
+
+.rankform .rank-box {
+  margin: 0 auto;
+  width: 100%;
+  border-top: 1px #ffdc73 solid;
+  border-left: 1px #ffdc73 solid;
+  color: #000;
+}
+
+.rankform .rank-box tr:nth-child(odd) {
+  background: #fff7d1;
+}
+
+.rankform .rank-box tr:nth-child(even) {
+  background: #ffffff;
+}
+
+.rankform .rank-box tr.redblod {
+  color: red;
+  font-weight: bold;
+}
+
+.rankform .rank-box tr.rank-title {
+  background: transparent url("../images/global/form_title_bg.jpg") center top repeat-x;
+  background-size: 1px 100%;
+}
+
+.rankform .rank-box tr.rank-title th {
+  color: #4d2608;
+}
+
+.rankform .rank-box tr.rank-title th:nth-child(1) {
+  width: 15%;
+}
+
+.rankform .rank-box tr.rank-title th:nth-child(2) {
+  width: 30%;
+}
+
+.rankform .rank-box tr.rank-title th:nth-child(3) {
+  width: 25%;
+}
+
+.rankform .rank-box tr.rank-title th:nth-child(4) {
+  width: 30%;
+}
+
+.rankform .rank-box tr th, .rankform .rank-box tr td {
+  padding: 1% 0.5%;
+  border-right: 1px solid #ffdc73;
+  border-bottom: 1px solid #ffdc73;
+}
+
+.rankform .rank-box tr td {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.2em;
+  position: relative;
+}
+
+.rankform .rank-box tr td .icon1 {
+  margin: 0 0 0 0;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent url("../images/global/Poseidoncrown1.png") center top no-repeat;
+  background-size: auto;
+  z-index: 99;
+}
+
+.rankform .rank-box tr td .icon2 {
+  margin: 0 0 0 0;
+  width: 100%;
+  height: 44px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent url("../images/global/Poseidoncrown2.png") center top no-repeat;
+  background-size: auto;
+  z-index: 99;
+}
+
+.rankform .rank-box tr td .icon3 {
+  margin: 0 0 0 0;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent url("../images/global/Poseidoncrown2.png") center top no-repeat;
+  background-size: auto;
+  z-index: 99;
+}
+/*# sourceMappingURL=index.css.map */

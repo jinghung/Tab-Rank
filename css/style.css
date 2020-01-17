@@ -1,0 +1,160 @@
+@charset "utf-8";
+@import url('https://cdn.08online.com//Html/Css/StaticPages/GameIntro/normalize.css');
+:focus {outline:0}
+
+ol,ul,li {list-style:none; padding:0; margin:0;}
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box
+}
+/*==========主要架構==========*/
+body {font:22px/1.5em "微軟正黑體",Arial; color:#ffffff; background: url(../images/wrap_bg2.jpg) center top repeat-y #64007a; overflow-x:hidden}
+#wrapper {height:100%; background: url(../images/wrap_bg.jpg) center top no-repeat;}
+#wrapper_fot {}
+#container {width:1000px; height:auto; margin:0 auto; position:relative; }
+#header {width:inherit; clear:both;}
+#header1 {display:none;}
+#header2 {display:none;}
+#content {height:auto; padding:960px 0 40px 0;}
+#footer {width:100%; height:75px; background:url(https://static.08online.com/Event/Global/foot.jpg) center top no-repeat #000; position:absolute;}
+#footer .fot_link {width:999px; height:75px; margin:0 auto;}
+#footer .fot_link a {display:block; width:141px; height:40px; position:absolute; margin-top:17px; margin-left:615px;}
+/*==========認證==========*/
+.logo_mark {width:54px; height:56px; background:url(https://static.08online.com/Event/Global/logo_mark.png) 0 0 no-repeat; position:absolute; margin-top:10px; margin-left:120px;}
+
+/*==========內容框架==========*/
+.content_top {height:auto; background:url(../images/con_top.jpg) center top no-repeat;}
+.content_mid {height:auto; background:url(../images/con_mid.jpg) center top repeat-y;}
+.content_fot {width:100%; height:80px; background:url(../images/con_fot.jpg) center top no-repeat;}
+
+/*==========Logo FB==========*/
+.logo_mark {width:54px; height:56px; background:url(https://static.08online.com/Event/Global/logo_mark.png) 0 0 no-repeat; position:absolute; margin-top:10px; margin-left:120px;}
+#logo {padding-left:5px; position:absolute; margin-top:10px; margin-left:10px; z-index:90; width:110px; height:85px; background:url(https://static.08online.com/Event/Global/logo.png) 0 0 no-repeat;}
+#logo_fb {padding-left:5px; position:absolute; margin-top:10px; margin-left:10px; z-index:90; width:110px; height:85px; background:url(https://static.08online.com/Event/Global/logo_fb.png) 0 0 no-repeat;}
+#logo a {display:block; width:110px; height:85px;}
+#fb {width:222px; height:56px; display:block; position:absolute; right:0; background:url(https://static.08online.com/Event/Global/fb_btn.png) center top no-repeat;}
+.float {width:201px; height:200px; background:url(https://static.08online.com/Event/Global/float.png) right top no-repeat; position:absolute; right:0px; top:150px; background-size:100%}
+/*==========頁籤==========*/
+ul.menu {padding:0 22px 0px; width:100%; height:auto; display:block; overflow:hidden; position:relative;}
+ul.menu li {margin:0; width:50%; display:block; float:left; white-space:nowrap;}
+ul.menu a {outline:none; cursor:pointer; }
+ul.menu img {margin:0px auto; display:block; width:100%;}
+
+ul.menu2 {margin:40px auto 0 auto; width:500px; height:56px; display:block; overflow:hidden; background:url(../images/menu_bg.png) center top no-repeat; background-size:100%;}
+ul.menu2 li {margin:0 2%; width:46%; display:block; float:left; white-space:nowrap;}
+ul.menu2 a {outline:none; cursor:pointer; }
+ul.menu2 img {display:block; width:100%;}
+
+
+
+/*==========框架==========*/
+#Tab_Content1,#Tab_Content2,#Tab_Content3,#Tab_Content4,#Tab_Content5 {padding:3% 2.8% 2% 2.8%;}
+#Page_div1,#Page_div2 {width:95%; margin:0 auto;}
+.list_box {width:100%; height:auto; padding:1% 0;}
+.list_box2 {width:800px; height:auto; padding:32px 15px 15px 55px; overflow:hidden;}
+.list_top {width:100%; height:auto; margin-right:10px; text-align:right;}
+.list_top img {display:block;}
+.list_fot {padding:1% 2% 1% 2%; line-height:1.8em;}
+.list_fot h3 {margin:0; padding:0 0 2% 0; color:#fffc00; font-size:1.8em;}
+.list_fot2 {padding:0 0 2% 3.5%; line-height:1.8em;}
+.list_box ol li,.list_box2 ol li {list-style:decimal; margin-left:27px;}
+.pic_div {margin:2% 0; text-align:center;}
+.img_des {width:100%;}
+#pic01_2 {display:none;}
+#pic02_2 {display:none;}
+ol.list_symbol>li {list-style:none; text-indent:-25px;}
+ol.list_symbol>li:before {content:'★ '; color:#ffd92b;}
+.text_ex {font-size:0.8em;}
+.general img {width:150px; float:left; padding-right:3%;}
+.general .text {width:calc(100% - 150px - 1%); float:left;}
+ol.textlist li {margin-left:3em; list-style:none; text-indent:-3em; display:-webkit-box; display:flex;}
+ol.textlist li:before {content:'舉例：';}
+
+ol.listtype01 {text-indent:0; width:95%;}
+ol.listtype01 li{
+    margin:0;
+    counter-increment: cnt;
+    list-style:none;
+    text-indent:0;
+}
+ol.listtype01 li:before{
+    display: marker;
+    content: "(" counter(cnt) ") ";
+    text-align:center;
+    display:inline-block;
+    margin-left:-2em;
+    width: 2em;
+}
+
+
+
+
+
+/*==========共用==========*/
+.t_size1 {font-size:18px;}
+.t_indent1 {text-indent:-6.8em; padding-left:6.8em;}
+.t_indent2 {text-indent:-3em; padding-left:3em;}
+.color01 {text-indent:-0.8em; padding-left:0.8em;}
+.web_box {height: 50px}
+.font_indent1 {padding-left: 27px}
+.pctext,.mobiletext {display:none;}
+.color01 {color:#ff7800;}
+.color02 {color:#37eaff;}
+.color03 {color:#00fef9;}
+.color04 {color:#fffc00;}
+.t_indent25 {text-indent:-25px; padding-left:25px}
+
+.l_indent3 {text-indent:0; padding:0 0 0 3em;}
+.l_indent3:before {content:'舉例：'; margin:0 0 0 -3em; position:absolute;}
+
+
+/*==========排行榜==========*/
+.form_list_select{margin:2% 0; width:100%; padding:0; font-size:1em; text-align:center; font-weight:900}
+.form_list_text {width:100%; padding:0; font-size:1.2em; text-align:center; font-weight:900}
+.form_list_box {padding:20px 10px 10px 10px}
+.form_list {margin:0 auto; width:100%; border-top:1px #ffdc73 solid; border-left:1px #ffdc73 solid; color:#000;}
+.form_list .form_title_bg {background:url(https://static.08online.com/Event/Global/form_title_bg.jpg) repeat-x center top; background-size:1px 100%;}
+.form_list th {color:#4d2608;}
+.form_list td {text-align:center; font-size:0.9em;}
+.form_list th,.form_list td {padding:5px; border-right:1px solid #ffdc73; border-bottom:1px solid #ffdc73;}
+.form_list th:nth-child(1) {width:15%;}
+.form_list th:nth-child(2) {width:30%;}
+.form_list th:nth-child(3) {width:25%;}
+.form_list th:nth-child(4) {width:30%;}
+.form_list th:nth-child(5) {width:20%;}
+.form_list td {line-height:1.2em; position:relative;}
+.form_list tr:nth-child(odd) td {background:#fff7d1;}
+.form_list tr:nth-child(even) td {background:#FFF;}
+.form_list tr.redblod {color:red; font-weight:bold;}
+.Rank1 tr:nth-child(-n+51) td {color:red; font-weight:bold;}
+.Rank2 tr:nth-child(-n+21) td {color:red; font-weight:bold;}
+.Rank3 tr:nth-child(-n+31) td {color:red; font-weight:bold;}
+.form_list .icon1 {margin:0 0 0 0; width:100%; height:52px; position:absolute; top:0px; left:0px; background:url(https://static.08online.com/Event/Global/Poseidoncrown1.png) center top no-repeat; z-index:99}
+.form_list .icon2 {margin:0 0 0 0; width:100%; height:44px; position:absolute; top:0px; left:0px; background:url(https://static.08online.com/Event/Global/Poseidoncrown2.png) center top no-repeat; z-index:99}
+.form_list .icon3 {margin:0 0 0 0; width:100%; height:40px; position:absolute; top:0px; left:0px; background:url(https://static.08online.com/Event/Global/Poseidoncrown3.png) center top no-repeat; z-index:99}
+.Rankicon div {position:absolute;}
+.Rankicon:nth-child(2) div {margin:0 0 0 0; width:100%; height:52px; position:absolute; top:0px; left:0px; background:url(https://static.08online.com/Event/Global/Poseidoncrown1.png) center top no-repeat; z-index:99}
+.Rankicon:nth-child(3) div {margin:0 0 0 0; width:100%; height:44px; position:absolute; top:0px; left:0px; background:url(https://static.08online.com/Event/Global/Poseidoncrown2.png) center top no-repeat; z-index:99}
+.Rankicon:nth-child(4) div {margin:0 0 0 0; width:100%; height:40px; position:absolute; top:0px; left:0px; background:url(https://static.08online.com/Event/Global/Poseidoncrown3.png) center top no-repeat; z-index:99}
+
+.act_list2 th:nth-child(1) {width:15%;}
+.act_list2 th:nth-child(2) {width:20%;}
+.act_list2 th:nth-child(3) {width:15%;}
+.act_list2 th:nth-child(4) {width:15%;}
+.act_list2 th:nth-child(5) {width:20%;}
+.act_list2 th:nth-child(6) {width:15%;}
+/*.act_list2 tr:nth-child(-n+101) td {color:red; font-weight:900;}
+.act_list2 tr div {position:absolute;}
+.act_list2 tr:nth-child(2) div {margin:-7px 0 0 72px; width:40px; height:52px; position:absolute; background:url(https://static.08online.com/Event/Global/Poseidoncrown1.png) 0 0 no-repeat;}
+.act_list2 tr:nth-child(3) div {margin:-6px 0 0 74px; width:35px; height:44px; position:absolute; background:url(https://static.08online.com/Event/Global/Poseidoncrown2.png) 0 0 no-repeat;}
+.act_list2 tr:nth-child(4) div {margin:-5px 0 0 75px; width:32px; height:40px; position:absolute; background:url(https://static.08online.com/Event/Global/Poseidoncrown3.png) 0 0 no-repeat;}*/
+
+
+/*獲獎名單*/
+.award_list_title {width:800px; text-align:center; font-size:1.2em; font-weight: bold; padding: 8px 0; margin:15px auto 0; background:url(https://static.08online.com/Event/Global/award_title.png) ; background-size:100% 100%;}
+.award_list_title h3 {margin:3% 0;}
+.awardlist {padding:25px 0 15px 0; overflow:hidden;}
+.awardlist li {padding:8px 5px; border-bottom:1px solid #f8d85a; height:70px; line-height:1.2em; width:20%; display:block; word-break:break-all; overflow:hidden; float:left;}
+.award_list_text {text-align:center; padding-bottom:5%;}

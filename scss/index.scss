@@ -1,0 +1,305 @@
+/*@import url('../../../../../Common/Css/normalize.css');
+@import "../../../../../Common/Css/SCSS/mixin";
+@import "../../../../../Common/Css/SCSS/all";*/
+@import url('https://static.08online.com/Common/Css/normalize.css');
+@import "mixin";
+@import "all";
+
+//初始設定
+$fontSize:                       24px !default; 
+$fontLineHeight:                 1.5 !default;
+$fontFamily:                     system-ui, -apple-system, BlinkMacSystemFont, "Microsoft YaHei UI", "Microsoft YaHei", Roboto, "Hiragino Sans GB",  "Source Han Sans CN", Fira Sans, "Droid Sans", "Helvetica Neue", arial, sans-serif !default;
+$colorText:                      #ffffff !default;
+$colorBg:                        #64007a !default;
+$maxWidth:                       1000px !default;
+$imgShareUrl:                    '../images/global/';
+
+//media的width變數
+$pc-media: $maxWidth;
+$app-media: 720px;
+
+
+/*====================主要架構====================*/
+html {
+    font-size: $fontSize;
+    line-height: $fontLineHeight;
+    font-family: $fontFamily;
+    color: $colorText;
+    @include app-width(525px) {
+        font-size: 20px;
+    }
+    @include app-width(460px) {
+        font-size: 18px;
+    }
+    @include app-width(360px) {
+        font-size: 16px;
+    }
+}
+
+body {
+    background: $colorBg;
+    overflow-x: hidden;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    @include background('wrap_bg2', $repeat:repeat-y, $size:1921px, $type: '.jpg');
+    @include pc-width(){
+        background-size:194%;
+    }
+    @include app-width() {
+        @include background('app_wrap_bg2', $repeat:repeat-y, $size:100%, $type: '.jpg');
+    }
+    #wrapper-header {
+        height: 100%;
+        @include background('wrap_bg', $size:1921px, $type: '.jpg');
+        @include pc-width() {
+            background-size: 194%;
+        }
+        @include app-width() {
+            @include background('app_wrap_bg', $size:100%, $type: '.jpg');
+        }
+    }
+}
+
+#container {
+    width: $maxWidth;
+    height: auto;
+    margin: 0 auto;
+    @include position(relative);
+    @include pc-width() {
+        overflow: hidden;
+        width: 100%;
+    }
+}
+
+#content {
+    height: auto;
+    padding: 96% 2.5% 2% 2.5%;
+    @include pc-width() {
+        padding: 97% 3% 2%;
+    }
+    @include app-width() {
+        padding: 126% 0 2%;
+    }
+}
+
+#footer {
+    width: 100%;
+    height: 75px;
+    @include background('foot', $url:$imgShareUrl, $color:#000, $type: '.jpg');
+    @include position(absolute);
+    @include app-width() {
+        @include background('foot2', $url:$imgShareUrl, $color:#000, $type: '.jpg');
+    }
+    @include app-width(525px) {
+        background-size: 100%;
+    }
+    @include app-width(460px) {
+        height: 55px;
+    }
+    @include app-width(360px) {
+        height: 45px;
+    }
+}
+
+/*====================LOGO、FB、浮動ICON====================*/
+#logo {
+    margin: 10px 0 0 5px;
+    z-index: 90;
+    width: 110px;
+    height: 85px;
+    //@include background('logo', $url:'../../../../Global/', $size:100%);
+    @include background('logo', $url:$imgShareUrl, $size:100%);
+    float: left;
+    @include app-width(500px) {
+        width: 80px;
+        height: 60px;
+    }
+    @include app-width(400px) {
+        width: 60px;
+        height: 47px;
+    }
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.mark {
+    margin: 20px 0 0 0;
+    width: 38px;
+    height: 40px;
+    @include background('logo_mark', $url:$imgShareUrl, $size:100%);
+    float: left;
+    @include app-width(500px) {
+        width: 35px;
+        height: 40px;
+        margin: 15px 0 0 0;
+    }
+    @include app-width(400px) {
+        width: 30px;
+        height: 32px;
+        margin: 10px 0 0 0;
+    }
+}
+
+#fb {
+    margin: 0 5px 0 0;
+    width: 222px;
+    height: 56px;
+    display: block;
+    @include background('fb_btn', $url:$imgShareUrl, $size:100%);
+    float: right;
+    @include app-width() {
+        width: 180px;
+        height: 40px;
+    }
+    @include app-width(500px) {
+        width: 160px;
+        height: 36px;
+        margin: 0;
+    }
+    @include app-width(400px) {
+        width: 135px;
+        height: 32px;
+    }
+}
+/*==================== MENU ====================*/
+.menu {
+    padding: 0 2% 3%;
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    a {
+        width: 50%;
+        display: block;
+        float: left;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+/*==================== 框架 ====================*/
+#Tab_Content1,#Tab_Content2 {
+    margin: 2% 0.3% 5%;
+}
+
+/*====================內容====================*/
+.item {
+    width: 100%;
+    height: auto;
+    padding: 1% 0 2%;
+    @include position(relative);
+    .item-title {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        img {
+            @include app-width() {
+                width: 45%;
+            }
+        }
+    }
+    .item-con {
+        padding: 1%;
+        @include pc-width() {
+            padding: 1% 2%;
+        }
+        h3 {
+
+            padding: 0 0 2% 0;
+            color: #fffc00;
+            font-size: 1.8em;
+        }
+    }
+}
+
+/*==================== 排行榜 ====================*/
+.ranktext {
+    width:100%;
+    font-size:1.2rem;
+    text-align:center;
+    font-weight:900
+}
+.rankform {
+    padding: 2% 1%; 
+    .rank-box {
+        margin: 0 auto;
+        width: 100%;
+        border-top: 1px #ffdc73 solid;
+        border-left: 1px #ffdc73 solid;
+        color: #000;
+        tr {
+            &:nth-child(odd) {
+                background: #fff7d1;
+            }
+            &:nth-child(even) {
+                background: #ffffff;
+            }
+            &.redblod {
+                color: red;
+                font-weight: bold;
+            }
+            &.rank-title {
+                @include background('form_title_bg', $url:$imgShareUrl, $repeat:repeat-x, $size:1px 100%, $type: '.jpg');
+                th {
+                    color: #4d2608;
+                    &:nth-child(1) {
+                        width: 15%;
+                    }
+                    &:nth-child(2) {
+                        width: 30%;
+                    }
+                    &:nth-child(3) {
+                        width: 25%;
+                    }
+                    &:nth-child(4) {
+                        width: 30%;
+                    }
+                }
+            }
+            th,td {
+                padding: 1% 0.5%;
+                border-right: 1px solid #ffdc73;
+                border-bottom: 1px solid #ffdc73;
+            }
+            td {
+                text-align: center;
+                font-size: 0.9rem;
+                line-height: 1.2em;
+                @include position(relative);
+                .icon1 {
+                    margin: 0 0 0 0;
+                    width: 100%;
+                    height: 52px;
+                    @include position(absolute, $top:0, $left:0);
+                    @include background('Poseidoncrown1', $url:$imgShareUrl);
+                    z-index: 99;
+                }
+                .icon2 {
+                    margin: 0 0 0 0;
+                    width: 100%;
+                    height: 44px;
+                    @include position(absolute, $top:0, $left:0);
+                    @include background('Poseidoncrown2', $url:$imgShareUrl);
+                    z-index: 99;
+                }
+                .icon3 {
+                    margin: 0 0 0 0;
+                    width: 100%;
+                    height: 40px;
+                    @include position(absolute, $top:0, $left:0);
+                    @include background('Poseidoncrown2', $url:$imgShareUrl);
+                    z-index: 99;
+                }
+            }
+        }
+
+    }
+}
