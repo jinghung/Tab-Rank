@@ -4,12 +4,13 @@
             tabsName: "",//名稱
             tabsToShow: 2,//頁籤總數
             tabsDefault: 1,//預設顯示
-            tabsImgUrl: "images/",//圖片路徑
+            tabsImgUrl: "images/btn0",//按鈕圖片路徑檔名
+            tabsImgType: "png", //按鈕圖片副檔名
             tabstype: 1,//頁籤類別:1-圖片
             tabparameter: "tabNum",//切換分頁參數
             tabsPageSize: 720,//APP尺寸
-            tabsIsAppImg: false,//是否平台按鈕圖一樣
-            tabsAppImgUrl: "", //APP按鈕路徑檔名
+            tabsIsAppImg: false,//是否平台按鈕圖不一樣
+            tabsAppImgUrl: "images/app_btn0", //APP按鈕路徑檔名
             tabNonShow: [] //禁能
         }, i );
 
@@ -60,7 +61,7 @@
                         var imgchage = "#tab" + n.tabsName + "Click" + x + " img";
                         $("#Tab" + n.tabsName + "_Content" + x).css({ 'display': 'none' });
                         $(imgchage).addClass('l-nolink');
-                        $(imgchage).attr('src', n.tabsImgUrl + n.tabsName + 'btn0' + x + '_n.png');
+                        $(imgchage).attr('src', n.tabsImgUrl + x + '_n.' + n.tabsImgType);
                     };
                 }
                 
@@ -74,7 +75,7 @@
                             if (n.tabNonShow.indexOf(t) == -1) {
                                 if (idx == t) {
                                     $("#Tab" + n.tabsName + "_Content" + t).css({ 'display': '' });
-                                    $(imgchage).attr('src', n.tabsImgUrl + n.tabsName +'btn0' + t + '_2.png');
+                                    $(imgchage).attr('src', n.tabsImgUrl + t + '_2.' + n.tabsImgType);
                                     $(imgchage).attr('onmouseover', '');
                                     $(imgchage).attr('onmousedown', '');
                                     $(imgchage).attr('onmouseout', '');
@@ -97,15 +98,15 @@
                                     history.pushState({ url: url, title: document.title }, document.title, url);
                                 } else {
                                     $("#Tab" + n.tabsName + "_Content" + t).css({ 'display': 'none' });
-                                    $(imgchage).attr('src', n.tabsImgUrl + n.tabsName +'btn0' + t + '.png');
-                                    $(imgchage).attr('onmouseover', 'this.src="' + n.tabsImgUrl + n.tabsName +'btn0' + t + '_2.png"');
-                                    $(imgchage).attr('onmousedown', 'this.src="' + n.tabsImgUrl + n.tabsName +'btn0' + t + '_2.png"');
-                                    $(imgchage).attr('onmouseout', 'this.src="' + n.tabsImgUrl + n.tabsName +'btn0' + t + '.png"');
+                                    $(imgchage).attr('src', n.tabsImgUrl + t + '.' + n.tabsImgType);
+                                    $(imgchage).attr('onmouseover', 'this.src="' + n.tabsImgUrl + t + '_2.' + n.tabsImgType + '"');
+                                    $(imgchage).attr('onmousedown', 'this.src="' + n.tabsImgUrl + t + '_2.' + n.tabsImgType + '"');
+                                    $(imgchage).attr('onmouseout', 'this.src="' + n.tabsImgUrl + t + '.' + n.tabsImgType + '"');
                                 }
                             }else {
                                 $("#Tab" + n.tabsName + "_Content" + t).css({ 'display': 'none' });
                                 $(imgchage).addClass('l-nolink');
-                                $(imgchage).attr('src', n.tabsImgUrl + n.tabsName + 'btn0' + t + '_n.png');
+                                $(imgchage).attr('src', n.tabsImgUrl + t + '_n.' + n.tabsImgType);
                             }
                         }
                         break;
